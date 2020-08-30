@@ -15,12 +15,12 @@ class Solve:
         if len(p) > 1:
             # Check Kleene Star
             if p[1] == '*':
-                # Condition 1: perform recursion till 'first' is false
+                # perform recursion till 'first' is false
                 return (first_check and self.match_regex(s[1:], p)) or self.match_regex(s, p[2:])  
         return self.match_regex(s[1:], p[1:]) and first_check
 
 
 if __name__ == '__main__':
-    # pass
+    # sample test
     solve = Solve()
-    print(solve.match_regex('a', 'a*'))
+    print(solve.match_regex('abc', 'a*.c*'))
