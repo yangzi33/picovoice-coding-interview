@@ -1,5 +1,4 @@
 # Picovoice Coding Interview
-## Ziyue Yang
 
 **[Python]** Given an input string and a pattern, implement regular expression matching with support for ‘.’ and ‘*’.
 
